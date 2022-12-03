@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Converter</title>
+    <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="container body">
+    <div class="cont2">
+        <div class="LDSwitch">
+            <div class="row">
+                <div class="col-xs-6">
+                    <input type="radio" class="lightDark" name="drone" id="customSwitch1" value="L">
+                    <label for="huey" class="toggle-lab">Light mode</label>
+                </div>
+
+
+                <div class="col-xs-6">
+                    <input type="radio" class="lightDark" name="drone" id="customSwitch2" value="D" checked>
+                    <label for="dewey" class="toggle-lab">Dark mode</label>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <header id="header">Converter</header>
+            <hr id="hr">
+            <div class="inner-cont">
+                <label class="paragraph">Enter Ammount</label>
+                <input type="text" id="ammount" required>
+                <br>
+                <div class="list">
+                    <div class="from">
+                        <label class="paragraph">From</label>
+                        <div class="select-box">
+                            <select id="selectOne">
+                                <option value="USD">USD-US Dollar</option>
+                                <option value="EUR">EUR-Euro</option>
+                                <option value="GBP">GBP-British Pound</option>
+                                <option value="AUD">AUD-Australian Dollar</option>
+                                <option value="JPY">JPY-Japanese Yen</option>
+                                <option value="CHF">CHF-Swiss Franc</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="to">
+                        <label class="paragraph">To</label>
+                        <div class="select-box">
+                            <select id="selectTwo">
+                                <option value="EUR">EUR-Euro</option>
+                                <option value="USD">USD-US Dollar</option>
+                                <option value="GBP">GBP-British Pound</option>
+                                <option value="AUD">AUD-Australian Dollar</option>
+                                <option value="JPY">JPY-Japanese Yen</option>
+                                <option value="CHF">CHF-Swiss Franc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <p id="par">9000</p>
+                </div> <br>
+                <div class="btt1">
+                    <button class="link2" id="btt2" onclick=convert()>Convert
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="link">
+        <a href="index.html" id="go-back">Back</a>
+    </div>
+    <div class="foot-div "></div>
+    <script src="converterScript.js"></script>
+</body>
+
+
+
+</html>

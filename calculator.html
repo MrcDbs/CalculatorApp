@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="container body" id="bodyId">
+    <div class="cont2">
+        <div class="LDSwitch">
+            <div class="row">
+                <div class="col-xs-6">
+                    <input type="radio" class="lightDark" name="drone" id="customSwitch1" value="L">
+                    <label for="huey" class="toggle-lab">Light mode</label>
+                </div>
+
+
+                <div class="col-xs-6">
+                    <input type="radio" class="lightDark" name="drone" id="customSwitch2" value="D" checked>
+                    <label for="dewey" class="toggle-lab">Dark mode</label>
+                </div>
+            </div>
+        </div>
+        <div class="frame" id="frameId">
+            <header id="header"></header>
+            <hr id="hr">
+            <input type="text" id="res" />
+            <div class="buttons">
+                <input type="button" class="num" name="seven" value="7">
+                <input type="button" class="num" name="eight" value="8">
+                <input type="button" class="num" name="nine" value="9">
+                <input type="button" class="operator" name="plus" value="+">
+                <br>
+                <input type="button" class="num" name="four" value="4">
+                <input type="button" class="num" name="five" value="5">
+                <input type="button" class="num" name="six" value="6">
+                <input type="button" class="operator" name="minus" value="-">
+                <br>
+                <input type="button" class="num" name="one" value="1">
+                <input type="button" class="num" name="two" value="2">
+                <input type="button" class="num" name="three" value="3">
+
+                <input type="button" class="operator" name="times" value="x">
+                <br>
+                <input type="button" class="clear" id="clear" name="clear" value="C">
+                <input type="button" class="num" name="zero" value="0">
+                <input type="button" class="num" name="point" value=".">
+                <input type="button" class="operator" name="div" value="/">
+                <br>
+                <input type="button" class="equal" id="doit" name="doit" value="=">
+            </div>
+        </div>
+    </div>
+    <div class="link" id="linkId">
+        <a href="index.html" id="go-back">Back</a>
+    </div>
+    <div class="foot-div "></div>
+    <script src="./calculatorScript.js"></script>
+</body>
+
+</html>
